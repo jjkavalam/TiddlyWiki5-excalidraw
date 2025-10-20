@@ -1,0 +1,12 @@
+title: $:/plugins/jjkavalam/footype/styles
+tags: $:/tags/Stylesheet
+
+.tc-footype-editor { display:flex; gap:0.75rem; align-items:center; margin:0.5rem 0; }
+.tc-footype-open { }
+.tc-footype-preview { border:1px dashed #ccc; padding:0.25rem; display:inline-flex; align-items:center; justify-content:center; min-width:320px; min-height:180px; background:#fafbfc; }
+.tc-footype-preview-image { max-width:320px; max-height:180px; }
+.tc-footype-preview-empty { color:#6b7280; font-style:italic; }
+.tc-footype-debug { font-size:0.8em; margin-top:0.25rem; }
+.tc-footype-modal-body { padding:0.25rem 0 0.5rem; }
+.tc-footype-iframe-wrap { width:100%; height:60vh; }
+.tc-footype-iframe { width:100%; height:100%; border:1px solid #d1d5db; border-radius:4px; }

@@ -1,0 +1,6 @@
+title: $:/plugins/jjkavalam/footype/widgets/FootypeIframe
+tags: $:/tags/Global
+
+\widget $footype.iframe(url:"" width:"100%" height:"60vh" sandbox:"allow-scripts allow-same-origin allow-forms" referrerpolicy:"no-referrer" class:"tc-footype-iframe")
+<iframe src=<<url>> width=<<width>> height=<<height>> sandbox=<<sandbox>> referrerpolicy=<<referrerpolicy>> class=<<class>> frameborder="0"></iframe>
+\end

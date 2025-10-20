@@ -1,0 +1,22 @@
+title: $:/plugins/jjkavalam/footype/ui/DiagramModal
+subtitle: Diagram Editor
+mask-closable: yes
+\import [[$:/core/ui/Buttons/Close]]
+\import [[$:/core/ui/Buttons/Cancel]]
+\whitespace trim
+<!-- Reset buffers on open to avoid stale state -->
+<$action-setfield $tiddler="$:/state/footype" svgBuffer="" />
+<$action-setfield $tiddler="$:/state/footype/hasPreview" text="" />
+footer: <$button class="tc-btn" aria-label="Cancel" tooltip="Close modal" message="tm-close-tiddler">Cancel</$button>
+
+<$reveal type="nomatch" stateTitle="$:/state/footype/hasPreview" stateField="text" text="yes">
+<div class="tc-footype-modal-intro tc-muted">Use the Excalidraw editor below. This instance is expected to run locally and supports automatic exchange.</div>
+</$reveal>
+
+<div class="tc-footype-modal-body">
+  <div class="tc-footype-iframe-wrap">
+    <!-- Bridge widget embedding local Excalidraw instance -->
+    <$footype-excalidraw tiddler={{{ [<diagramTiddler>is[blank]then<currentTiddler>else<diagramTiddler>] }}} url="http://localhost:5188/"/>
+  </div>
+
+</div>

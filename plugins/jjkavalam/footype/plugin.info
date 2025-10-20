@@ -1,0 +1,12 @@
+{
+	"title": "$:/plugins/jjkavalam/footype",
+	"name": "Foo Type + Editor Demo",
+	"version": "0.1.0",
+	"description": "Registers application/x-foo content type and a custom editor",
+	"author": "jjkavalam",
+	"list": "readme",
+	"core-version": ">=5.2.0",
+	"stability": "STABILITY_2_STABLE",
+	"dependents": [],
+	"type": "application/json"
+}

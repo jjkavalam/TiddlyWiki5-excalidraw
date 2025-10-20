@@ -1,0 +1,12 @@
+The Footype demo stores the diagram as raw SVG in the tiddler text (type `application/x-foo`).
+The custom editor writes the SVG to the tiddler on Close/Done, and the preview reads from the text.
+For the demo we preview via a data URI `<img src="data:image/svg+xml;utf8,...">`.
+Note: If you later choose to render inline SVG markup, be mindful of XSS/security; prefer sanitization.
+
+title: $:/plugins/jjkavalam/footype/readme
+caption: Foo Type + Editor Demo
+
+This demo plugin registers a new content type `application/x-foo` and provides a simple custom editor widget `edit-foo`.
+
+- Register type: in a startup module, we call `$tw.utils.registerFileType("application/x-foo","utf8",".foo",{deserializerType:"text/plain"})`.
+- Map editor: we set `$:/config/EditorTypeMappings/application/x-foo` to `foo`, so the `<$edit>` meta-widget uses `<$edit-foo>` for tiddlers of this type.

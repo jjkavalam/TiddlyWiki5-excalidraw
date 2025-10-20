@@ -1,0 +1,15 @@
+{
+  "description": "Demo wiki for application/x-foo custom type and editor",
+  "plugins": [
+    "jjkavalam/footype"
+  ],
+  "themes": [
+    "tiddlywiki/vanilla",
+    "tiddlywiki/snowwhite"
+  ],
+  "build": {
+    "index": [
+      "--render","$:/core/save/all","index.html","text/plain"
+    ]
+  }
+}
